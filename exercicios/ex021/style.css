@@ -1,0 +1,13 @@
+h1 { /* box-level*/
+    background-color: lightblue;
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    outline: blueviolet dashed 5px;
+    padding: 10px;
+    margin: 15px 15px 30px 15px;
+}
+
+a { /* Inline-level*/
+    border: 5px solid black;
+}
