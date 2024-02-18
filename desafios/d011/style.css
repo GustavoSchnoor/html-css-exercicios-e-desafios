@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    background-image: url(imagens/espaco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 div {
     display: flex;
     height: 100%;
@@ -12,13 +21,5 @@ div {
 }
 
 img {
-    width: 36%;
-}
-
-body {
-    height: 100vh;
-    background-image: url(imagens/espaco.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    max-width: 40%;
 }
