@@ -64,3 +64,24 @@ main {
     transform: translate(-2px, -2px);
     transition: transform 0.5s;
 }
+
+@media (max-width: 500px) {
+    #telefone {
+        top: 21%;
+        left: 23%;
+        transform: translate(-25%, -25%);
+        height: 500px;
+        width: 248px;
+        background-size: cover;
+    }
+
+    #tela {
+        top: 64px;
+        left: 18px;
+        width: 213px;
+        height: 377px;
+    }
+
+
+
+}
