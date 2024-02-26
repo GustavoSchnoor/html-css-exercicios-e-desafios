@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*Todas as demais Mídias*/
+/*Typical Devices Breakpoints :
+-------------------------------
+1. **Smartphones:**
+    - Portrait (vertical): 320px - 480px
+    - Landscape (horizontal): 480px - 767px
+2. **Tablets:**
+    - Portrait (vertical): 768px - 1024px
+    - Landscape (horizontal): 1024px - 1199px
+3. **Laptops/Computadores desktops:**
+    - Pequenos laptops: 1200px - 1439px
+    - Laptops/desktops padrão: 1440px - 1919px
+    - Monitores grandes/desktops widescreen: 1920px e acima 
+*/
+@media print { /*Impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /*Desnecessário pois nao imprimi background*/
+    }
+    #phone {display: none;}
+
+    #tablet {display: none;}
+
+    #print {display: block;}
+
+    #pc {display: none;}
+
+    #tv {display: none;}
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+}
+
+/*Celular | Mas foi feito mobile first, então não vai ter nada ou pequenas modificações para larguras muito próximas da minima*/
+@media screen and (min-width: 320px) and (max-width: 480px) { 
+
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone {display: none;}
+
+    #tablet {display: block;}
+
+    #print {display: none;}
+
+    #pc {display: none;}
+
+    #tv {display: none;}
+}
+
+/*PC*/
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none;}
+
+    #tablet {display: none;}
+
+    #print {display: none;}
+
+    #pc {display: block;}
+
+    #tv {display: none;}
+}
+
+/*Telas grandes | TV | Monitor Grande*/
+@media screen and (min-width: 1401px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone {display: none;}
+
+    #tablet {display: none;}
+
+    #print {display: none;}
+
+    #pc {display: none;}
+
+    #tv {display: block;}
+}
+
+
